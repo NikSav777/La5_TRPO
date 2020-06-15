@@ -2,22 +2,22 @@
 <testng-results total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-06-15T19:41:10Z" name="Suite1" finished-at="2020-06-15T19:41:10Z" duration-ms="109">
+  <suite started-at="2020-06-15T20:44:16Z" name="Suite1" finished-at="2020-06-15T20:44:16Z" duration-ms="101">
     <groups>
     </groups>
-    <test started-at="2020-06-15T19:41:10Z" name="test1" finished-at="2020-06-15T19:41:10Z" duration-ms="27">
+    <test started-at="2020-06-15T20:44:16Z" name="test1" finished-at="2020-06-15T20:44:16Z" duration-ms="42">
       <class name="tests.tests">
-        <test-method signature="FirstTest()[pri:0, instance:tests.tests@70a9f84e]" started-at="2020-06-15T23:41:10Z" name="FirstTest" finished-at="2020-06-15T23:41:10Z" duration-ms="10" status="PASS">
+        <test-method signature="FirstTest()[pri:0, instance:tests.tests@70a9f84e]" started-at="2020-06-16T00:44:16Z" name="FirstTest" finished-at="2020-06-16T00:44:16Z" duration-ms="15" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FirstTest -->
-        <test-method signature="SecondTest()[pri:0, instance:tests.tests@70a9f84e]" started-at="2020-06-15T23:41:10Z" name="SecondTest" finished-at="2020-06-15T23:41:10Z" duration-ms="0" status="PASS">
+        <test-method signature="SecondTest()[pri:0, instance:tests.tests@70a9f84e]" started-at="2020-06-16T00:44:16Z" name="SecondTest" finished-at="2020-06-16T00:44:16Z" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SecondTest -->
       </class> <!-- tests.tests -->
     </test> <!-- test1 -->
-    <test started-at="2020-06-15T19:41:10Z" name="test2" finished-at="2020-06-15T19:41:10Z" duration-ms="0">
+    <test started-at="2020-06-15T20:44:16Z" name="test2" finished-at="2020-06-15T20:44:16Z" duration-ms="0">
     </test> <!-- test2 -->
   </suite> <!-- Suite1 -->
 </testng-results>
