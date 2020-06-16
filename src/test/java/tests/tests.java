@@ -66,6 +66,18 @@ public class tests {
                 };
     }
 
+    @DataProvider(name = "Module4")
+    public Object[][] createData6()
+    {
+
+        double a = 5;
+
+        return new Object[][]
+                {
+                        {a}
+                };
+    }
+
 
     @Test(dataProvider = "Module1")
     public void FirstModule(int a)
@@ -82,7 +94,7 @@ public class tests {
     @Test(dataProvider = "Module2.1")
     public void SecondModule1(int a, int b)
     {
-        System.out.println("Тест 2 - Позитивная проверка функции Math.addExact корректными значениями");
+        System.out.println("Тест 3 - Позитивная проверка функции Math.addExact корректными значениями");
         //Позитивная проверка
         // модуля Math.addExact(int x, int y)
         int c = Math.addExact(a,b);
@@ -95,7 +107,7 @@ public class tests {
     @Test(dataProvider = "Module2.2")
     public void SecondModule2(int b)
     {
-        System.out.println("Тест 3 - Негативная проверка функции Math.addExact переполнением с положительными числами");
+        System.out.println("Тест 4 - Негативная проверка функции Math.addExact переполнением с положительными числами");
 
         //Проверка модуля Math.addExact(int x, int y)
         // на переполнение типа int с положительными числами
@@ -115,7 +127,7 @@ public class tests {
     @Test(dataProvider = "Module2.3")
     public void SecondModule3(int b)
     {
-        System.out.println("Тест 4 - негативная проверка функции Math.addExact переполнением с отрицательными числами");
+        System.out.println("Тест 5 - негативная проверка функции Math.addExact переполнением с отрицательными числами");
 
         //Проверка модуля Math.addExact(int x, int y)
         // на переполнение типа int с отрицательными числами
@@ -135,7 +147,7 @@ public class tests {
     @Test(dataProvider = "Module3")
     public void ThirdModule1(int a, int b, int c)
     {
-        System.out.println("Тест 5 - Позитивная проверка Math.floorDiv c корректными значениями");
+        System.out.println("Тест 6 - Позитивная проверка Math.floorDiv c корректными значениями");
 
         int res = Math.floorDiv(a, b);
         System.out.println("Первое число = " + a + "; Второе число = " + b);
@@ -148,7 +160,7 @@ public class tests {
     @Test(dataProvider = "Module1")
     public void ThirdModule2(int a)
     {
-        System.out.println("Тест 6 - Негативная проверка Math.floorDiv делением на ноль");
+        System.out.println("Тест 7 - Негативная проверка Math.floorDiv делением на ноль");
 
         int b = 0;
         try {
@@ -164,4 +176,13 @@ public class tests {
 
     }
 
+    @Test(dataProvider = "Module4")
+    public void FourthModule1(double a) {
+        System.out.println("Тест 2 - Позитивная проверка Math.exp() ");
+        double b = Math.exp(a);
+        System.out.println("Число " + a);
+        System.out.print("Math.exp() = ");
+        System.out.printf("%.3f\n", b);
+        System.out.println();
+    }
 }
